@@ -1,0 +1,25 @@
+##DATA AUGMENTATION
+Used in ML to artificially increase the size and diversity of a dataset by applying transformation to existing data.
+Why DA is imp?
+a.To prevent the overfitting
+b.Improve Model Peformance
+c.Useful for small Dataset
+
+Types of DA:
+1.Image DA
+a.Geometric Transformation: Rotation, Flipping, Scaling and Resizing, Cropping
+b.Color based Augmentation: Brightness adjustment, Contrast adjustment, Color Jittering
+c.Noise Injection: Adds random noise to images to improve robustness.
+
+2.Text Augmentation:
+a.Synonym Replacement:
+b.Back Translation
+c.Random Insertion and Deletion
+
+3.Time series DA
+Time wrapping
+Jittering
+Permutation
+
+
+

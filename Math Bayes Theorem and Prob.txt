@@ -1,0 +1,42 @@
+BAYES THEOREM
+
+P(H/E) = P(H) P(E/H)/P(E)
+
+P(H/E)->posterior probability
+P(E/H)->likelihood
+P(H)->Prior Probability
+P(E)->Marginal probability
+
+Ex: Disease Diagnosis(10000 total people tested)
+Informations:
+P(H)=0.01    ->(100/10000)
+Th test is 99% accurate
+TPR
+P(E/H)=0.99
+FPR
+P(E/-H)=0.05
+P(-H)=1-P(H)=0.99(99% of the people dont have the disease)
+find the P(H/E)?
+Ans:
+Step-1:Find the marginal probability
+P(E)=P(E/H).P(H)+P(E/-H).P(-H)
+P(E)=(0.99*0.01)+(0.05*0.99)
+P(E)=0.0099+0.0495
+P(E)=0.0594
+
+Step-2:Apply Bayes' Theorem
+P(H/E) = P(H) P(E/H)/P(E)
+P(H/E)=0.01*0.99/0.0594
+P(H/E)=0.0099/0.0594
+P(H/E)~0.1667   -> Posterior Probability
+
+P(H/E)=0.167 means 16.7%
+Test results:
+True positives: 99 people(99% of 100) test positive and have the disease
+False positives: 495 people(5% of 9900) test positive but dont have the disease
+
+So from the 594(99 TP+495 FP) people who test positive but dont have the disease
+Only 99 actually have the disease
+Thats about 16.7% true positives out of all positive results
+
+

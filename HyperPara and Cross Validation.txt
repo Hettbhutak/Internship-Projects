@@ -1,0 +1,38 @@
+##HYPERPARAMETER
+The process of optimizing the performance of ml model by selecting the best combination of hyperparameters.
+Common Hyperparameters in ML alg:
+L1 AND L2 regularization
+max_depth,criterion
+n_estimators
+max_features
+learning_rate
+subsample
+kernel, gamma
+n_neighbors,metric
+batch_size, dropout rate
+
+Hyperpara Tuning Techniques:
+1.Grid Search: For small and well defined hyperpara spaces
+2. Random Search:Faster for large spaces
+3.Bayesian Optimization:Best for complex models and large datasets
+4. Automated ML: Automates the tuning process for quick results
+
+Evaluation Metrics for Tuning:
+Classification:accuracy,f1 score, precision,recall,roc auc curve
+Regression:mse,rmse,r2 score
+
+
+##CROSS VALIDATION
+Technique to evaluate the performance of ml models amd ensure they generalize well to unseen data.
+
+Types:
+K-fold CV:
+CV Score=1/K E ScorEi
+If K=5, the model is trained 5 times,each time using 4/5 of the data for training and 1/5 for testing.
+
+Stratified K-Fold Cross Validation:
+
+Leave One Out CV(LOOCV):
+loo=LeaveOneOut()
+
+Time Series CV
